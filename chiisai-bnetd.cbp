@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="chiisai-bnetd" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<MakeCommands>
+			<Build command="gmake" />
+			<CompileFile command="gmake $file" />
+			<Clean command="gmake clean" />
+			<DistClean command="$make -f $makefile distclean$target" />
+			<AskRebuildNeeded command="gmake -q -f $makefile" />
+			<SilentBuild command="gmake -s -f $makefile" />
+		</MakeCommands>
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/chiisai-bnetd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-Wno-multichar" />
+					<Add directory="/usr/local/include" />
+				</Compiler>
+				<Linker>
+					<Add directory="/usr/local/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/chiisai-bnetd" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="/usr/local/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add directory="/usr/local/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-Wno-multichar" />
+			<Add directory="/usr/local/include" />
+		</Compiler>
+		<Linker>
+			<Add library="/usr/local/lib/libsqlite3.so" />
+			<Add library="/usr/local/lib/libgmp.so" />
+			<Add library="/usr/lib/libmd.so" />
+			<Add directory="/usr/local/lib" />
+		</Linker>
+		<Unit filename="src/bradix.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/bradix.h" />
+		<Unit filename="src/chain.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/chain.h" />
+		<Unit filename="src/channel.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/channel.h" />
+		<Unit filename="src/chat.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/chat.h" />
+		<Unit filename="src/clan.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/clan.h" />
+		<Unit filename="src/cmds.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/cmds.h" />
+		<Unit filename="src/conn.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/conn.h" />
+		<Unit filename="src/friends.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/friends.h" />
+		<Unit filename="src/fxns.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/fxns.h" />
+		<Unit filename="src/hashing.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/hashing.h" />
+		<Unit filename="src/ht.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/ht.h" />
+		<Unit filename="src/ip.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/ip.h" />
+		<Unit filename="src/logon.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/logon.h" />
+		<Unit filename="src/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/main.h" />
+		<Unit filename="src/name.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/name.h" />
+		<Unit filename="src/nls.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/nls.h" />
+		<Unit filename="src/op.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/op.h" />
+		<Unit filename="src/packets.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/packets.h" />
+		<Unit filename="src/pbuffer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/pbuffer.h" />
+		<Unit filename="src/profile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/profile.h" />
+		<Unit filename="src/srp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/srp.h" />
+		<Unit filename="src/sync.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sync.h" />
+		<Unit filename="src/user.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user.h" />
+		<Unit filename="src/vector.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/vector.h" />
+		<Unit filename="src/vuser.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/vuser.h" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
